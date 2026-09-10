@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/player/weapons/Fireball.gd" id="1"]
+
+[node name="Fireball" type="Node2D"]
+script = ExtResource("1")
+display_name = "Fireball"
+damage = 12
+cooldown = 0.6
+range_type = 1
+effect_trigger = 1
+effect_duration = 5.0
+projectile_speed = 300.0
+projectile_lifetime = 1.4
+explosion_radius = 24.0
+explosion_damage = 4
+freeze_duration = 5.0
+knockback = 120.0

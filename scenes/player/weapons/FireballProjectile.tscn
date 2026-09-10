@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bpq84cu4uyep4"]
+
+[ext_resource type="Script" uid="uid://bf38bmsshqg4a" path="res://scenes/player/weapons/FireballProjectile.gd" id="1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fireball"]
+radius = 4.0
+
+[node name="FireballProjectile" type="Area2D" unique_id=76938504]
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975575861]
+shape = SubResource("CircleShape2D_fireball")

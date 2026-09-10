@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b132dyhlsvqlx"]
+
+[ext_resource type="Script" uid="uid://dkotu7bxxei5i" path="res://scenes/game/camera/DynamicCamera.gd" id="1"]
+
+[node name="DynamicCamera" type="Camera2D" unique_id=1196774693]
+position_smoothing_speed = 100.0
+editor_draw_limits = true
+script = ExtResource("1")
+min_zoom_scale = 1.8
+enforce_max_zoom = true
+max_zoom_scale = 0.4
+world_margin = 100.0
+follow_smoothing = 5.0
+zoom_smoothing = 3.0
+reference_view_size = Vector2(640, 320)

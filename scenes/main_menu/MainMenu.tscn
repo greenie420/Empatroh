@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cy10l17sph81n"]
+
+[ext_resource type="Script" uid="uid://coopqmq0pedii" path="res://scenes/main_menu/MainMenu.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3k0f"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="MainMenu" type="Control" unique_id=1926796139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1093760377]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.07, 0.09, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=619618320]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=637597998]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1644966027]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "BRAWLER DEATHMATCH"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="CenterContainer/VBoxContainer" unique_id=332845043]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="NewGameButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=261372078]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 36)
+layout_mode = 2
+text = "New Game"
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=61261949]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 36)
+layout_mode = 2
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=63158284]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 36)
+layout_mode = 2
+text = "Exit"
+
+[node name="PlayerCountPopup" type="PanelContainer" parent="." unique_id=1245826675]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -110.0
+offset_right = 120.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_c3k0f")
+
+[node name="MarginContainer" type="MarginContainer" parent="PlayerCountPopup" unique_id=1200837339]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlayerCountPopup/MarginContainer" unique_id=1283306906]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="PlayerCountPopup/MarginContainer/VBoxContainer" unique_id=873290920]
+layout_mode = 2
+text = "Set up players (2-4 total)"
+horizontal_alignment = 1
+
+[node name="SlotRows" type="VBoxContainer" parent="PlayerCountPopup/MarginContainer/VBoxContainer" unique_id=2089208349]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ErrorLabel" type="Label" parent="PlayerCountPopup/MarginContainer/VBoxContainer" unique_id=1668259819]
+unique_name_in_owner = true
+modulate = Color(1, 0.4, 0.4, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+horizontal_alignment = 1
+
+[node name="ButtonRow" type="HBoxContainer" parent="PlayerCountPopup/MarginContainer/VBoxContainer" unique_id=815840627]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="StartButton" type="Button" parent="PlayerCountPopup/MarginContainer/VBoxContainer/ButtonRow" unique_id=1581439098]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start"
+
+[node name="CancelButton" type="Button" parent="PlayerCountPopup/MarginContainer/VBoxContainer/ButtonRow" unique_id=1693232680]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Cancel"

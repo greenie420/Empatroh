@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bvqjuotsqqssi"]
+
+[ext_resource type="Script" uid="uid://34t6gmc5m2nf" path="res://scenes/ui/hud/HUD.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4wmmr"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="HUD" type="CanvasLayer" unique_id=873144823]
+script = ExtResource("1")
+
+[node name="Root" type="Control" parent="." unique_id=823861468]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EndOverlay" type="PanelContainer" parent="." unique_id=544868222]
+unique_name_in_owner = true
+top_level = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -40.0
+offset_right = 90.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4wmmr")
+
+[node name="MarginContainer" type="MarginContainer" parent="EndOverlay" unique_id=906595143]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EndOverlay/MarginContainer" unique_id=398956577]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="EndLabel" type="Label" parent="EndOverlay/MarginContainer/VBoxContainer" unique_id=808526081]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Player 1 wins!"
+horizontal_alignment = 1
+
+[node name="EndButton" type="Button" parent="EndOverlay/MarginContainer/VBoxContainer" unique_id=945974191]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back to Menu"

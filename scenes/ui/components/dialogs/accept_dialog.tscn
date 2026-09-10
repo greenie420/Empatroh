@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://mg8j8crq3vjq"]
+
+[node name="AcceptDialog" type="AcceptDialog" unique_id=1931040392]
+oversampling_override = 1.0
+initial_position = 5
+visible = true

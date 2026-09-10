@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://blaster_weapon_scene"]
+
+[ext_resource type="Script" path="res://scenes/player/weapons/Blaster.gd" id="1"]
+
+[node name="Blaster" type="Node2D"]
+script = ExtResource("1")
+display_name = "Blaster"
+damage = 8
+cooldown = 0.6
+bullet_speed = 340.0
+muzzle_offset = 14.0
