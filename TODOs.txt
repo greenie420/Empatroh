@@ -1,32 +1,10 @@
-Game name: Empatroh
-
-
 ?-short press short jump, long press long/high jump
 ?-wall hold.. wall jump
 ?-slide, down press
 ?-speed/jump boost: jump while slide on slope
 
-
 !- add controller support fully and test it
-!- change keybinds to this for first two players:
-	Rdeč (Player1):
-		WASD - movement (in merjenje)
-		G - W1
-		H - W2
-		J - jump
-		M - utility
-	Moder (Player 2)
-		ARROWS - movement (in merjenje)
-		4 - W1
-		5 - W2
-		6 - jump
-		3 - utility
-		
-!- jump on a different key as move input
-!- 8 sided aim
 !- make camera less shaky and shrink/grow slower... idk
-!- add weapon class and do two example weapons for now: sword, fireball
-!- add utility class and add one util for now: dash
 !- new game weapons and utility select screen, before game
 !- 4-5 layerjev ozadja za globino, se malo premika glede na kamero (eden na keterem se igra, 3-4 v ozadju, v ospredju mogoče sloj vinjeta  silhueta, ali pa tudi ne, bomo vidli kaj bo boljše)
 
